@@ -1,0 +1,249 @@
+body {
+  overflow-x: hidden;
+  background-color: #19161b;
+}
+.header {
+  margin: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  .container {
+    margin: 0 10%;
+    .navbar-toggler {
+      border: none;
+    }
+    .bi {
+      color: white;
+      font-size: 35px;
+    }
+  }
+  .navbar-brand {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #ffc492;
+  }
+  .navbar-brand:hover {
+    color: white;
+  }
+
+  .sidenav {
+    color: white;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100vw;
+      position: fixed;
+      transition: 0.5s;
+      transform: rotateX("angle");
+      z-index: 99;
+      top: 0;
+      left: 0;
+      background-color: #f8f8f8;
+      overflow-x: hidden;
+      padding-top: 60px;
+      .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      .head {
+        justify-content: space-between;
+        padding: 8px 8px 8px 32px;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid black;
+        .wrap {
+          button {
+            font-size: 18px;
+            border: none;
+            background: none;
+          }
+        }
+      }
+      i {
+        font-size: 39px;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        padding: 8px 8px 8px 32px;
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        gap: 1rem;
+      }
+      .active {
+        color: #ff7757;
+      }
+      a {
+        font-weight: 500;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        display: block;
+      }
+      a:hover {
+        color: #9d9999;
+      }
+    }
+  }
+  .navbar-nav {
+    .true {
+      background: #ff7757;
+    }
+    .nav-item {
+      height: 100%;
+      padding: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+      .nav-link {
+        color: white;
+      }
+    }
+  }
+
+  .clone-btn {
+    padding: 10px;
+    background: none;
+    border-color: #a0a4bd;
+    font-weight: 500;
+    color: #ffc492;
+    border: none;
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+    .bi {
+      font-size: 15px;
+      color: white;
+    }
+  }
+  #mySidenav {
+    display: none;
+  }
+}
+.main-container {
+  margin: 5% 10% 0 10%;
+  .header {
+    display: flex;
+    color: white;
+    gap: 2rem;
+    height: 100%;
+
+    h1 {
+      font-size: 56px;
+    }
+    @media (max-width: 768px) {
+      display: block;
+    }
+    .left {
+      width: 50%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      .text {
+        margin: 10% 0;
+        h1 {
+          font-family: "Playfair Display", sans-serif;
+        }
+        @media (max-width: 768px) {
+          h1 {
+            display: block;
+            font-size: 2.5rem;
+          }
+          p {
+            display: none;
+          }
+          button {
+            display: none;
+          }
+          h4 {
+            display: none;
+          }
+        }
+      }
+
+      p {
+        font-weight: 300;
+        color: #9d9999;
+      }
+      button {
+        border: none;
+        background-color: #ffc492;
+        margin: 5% 0;
+        padding: 10px 20px;
+        font-weight: 600;
+      }
+    }
+    .right {
+      width: 50%;
+      object-fit: cover;
+      @media (max-width: 768px) {
+        width: 100%;
+        position: relative;
+        img {
+          opacity: 0.5;
+        }
+      }
+      .overlay-hidden{
+        display: none;
+        @media (max-width:768px) {
+          top: 0;
+          display: block;
+          position: absolute;
+          overflow: hidden;
+          height: 0;
+          background-color: gray;
+          transition: .5s ease;
+          width: 100%;
+        }
+        .text{
+          @media (max-width: 768px) {
+
+          }
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .right:hover .overlay-hidden{
+        height: 100%;
+        bottom: 0;
+      }
+    }
+
+
+    .hidden-content {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        button {
+          border: none;
+          background-color: #ffc492;
+          margin: 5% 0;
+          padding: 10px 20px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
