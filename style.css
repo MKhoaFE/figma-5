@@ -304,6 +304,7 @@ body {
   }
 }
 .main-container .know-more {
+  position: relative;
   color: white;
   margin-top: 5rem;
   display: flex;
@@ -386,6 +387,7 @@ body {
   color: black;
 }
 .main-container .know-more .right {
+  position: relative;
   display: flex;
   width: 50%;
   justify-content: end;
@@ -786,11 +788,20 @@ body {
 .map .left {
   width: 40%;
   padding: 4rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .map .left {
     width: 100%;
+    padding: 2rem;
   }
+}
+.map .left h3 {
+  font-size: 1rem;
+}
+.map .left p {
+  color: #9d9999;
 }
 .map .right {
   width: 100%;

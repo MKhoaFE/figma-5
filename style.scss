@@ -292,6 +292,7 @@ body {
     }
   }
   .know-more {
+    position: relative;
     color: white;
     margin-top: 5rem;
     display: flex;
@@ -367,10 +368,12 @@ body {
       }
     }
     .right {
+      position: relative;
       display: flex;
       width: 50%;
       justify-content: end;
       gap: 2rem;
+      
       @media (max-width: 768px) {
         width: 80%;
         margin: 0 10%;
@@ -732,8 +735,17 @@ body {
   .left {
     width: 40%;
     padding: 4rem;
+    line-height: 1.5;
+    font-weight: 500;
     @media (max-width: 768px) {
       width: 100%;
+      padding: 2rem;
+    }
+    h3{
+      font-size: 1rem;
+    }
+    p{
+      color: #9d9999;
     }
   }
   .right {
