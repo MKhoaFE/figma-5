@@ -6,10 +6,10 @@ function closeNav() {
   document.getElementById("mySidenav").style.display = "none";
 }
 
-let wrap_1 = document.querySelector(".wrap"),
-    itemWidth_1 = document.querySelectorAll(".item")[0].clientWidth;
+let wrap_1 = document.querySelector(".wrap-slide"),
+    itemWidth_1 = document.querySelectorAll(".item-slide")[0].clientWidth;
 
-let items_1 = document.querySelectorAll(".item");
+let items_1 = document.querySelectorAll(".item-slide");
 
 let position_1 = 0;
 let currentDot_1 = 0;
@@ -44,3 +44,12 @@ document.querySelector(".btn1-right").addEventListener("click", function() {
   wrap_1.style.transform = "translateX(" + position_1 + "px)";
 
 });
+
+
+function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }

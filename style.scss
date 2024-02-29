@@ -622,32 +622,50 @@ body {
     }
   }
 }
-.blog{
+.blog {
   color: white;
   margin-top: 3rem;
-  h1{
+  h1 {
     width: 100%;
     max-width: 20rem;
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 600;
   }
-  .wrap{
+  .wrap-slide {
     display: flex;
     gap: 1.5rem;
     @media (max-width: 768px) {
-      overflow: hidden;
+      display: block;
     }
-    .card{
+    .card {
       background: #151217;
       @media (max-width: 768px) {
-        min-width: 100%!important;
+        margin-top: 1rem;
       }
-      .card-body{
+      .card-body {
+        padding: 1.25rem;
+        .day {
+          font-size: 1rem;
+          color: #9d9999;
+        }
+        .title {
+          font-size: 2rem;
+          h3 {
+            font-size: 2rem;
+            line-height: 1.5;
+            font-weight: 500;
+          }
+        }
+        .desc {
+          p {
+            color: #9d9999;
+          }
+        }
       }
-      .image{
+      .image {
         width: 100%;
-        img{
+        img {
           width: 100%;
           max-height: 16rem;
           -o-object-fit: cover;
@@ -656,7 +674,7 @@ body {
       }
     }
   }
-  .hidden-content{
+  .hidden-content {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -667,7 +685,99 @@ body {
     margin: 5% 0;
     display: none;
     @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+.map {
+  margin-top: 5rem;
+  color: white;
+  display: flex;
+  width: 100%;
+  background: #1f1d21;
+  @media (max-width: 768px) {
+    display: block;
+  }
+  .left {
+    width: 40%;
+    padding: 4rem;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .right {
+    width: 100%;
+    @media (max-width: 768px) {
+      height: 300px;
+    }
+  }
+}
+.footer{
+  color: white;
+  margin-top: 5rem;
+  .top{
+    font-family: Arial,sans-serif;
+    width: 100%;
+    text-align: center;
+    h2{
+      font-weight: 700;
+      color: #ffc492;
+      cursor: pointer;
+    }
+  }
+  .menu{
+    font-family: Arial,sans-serif;
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    @media (max-width:768px) {
+      display: block;
+    }
+    p{
+      cursor: pointer;
+      color: #9d9999;
+      font-weight: 600;
+    }
+    p:hover{
+      color: #ffc492;
+    }
+
+  }
+  .line{
+    border-top: solid 2px #9d9999;
+    height: 2px;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    @media (max-width: 768px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    span{
+      color: #9d9999;
+      @media (max-width:768px) {
+        
+      }
+    }
+    .icon{
       display: flex;
+      gap: 1rem;
+      font-size: 1.5rem;
+      color: #9d9999;
+      @media (max-width:768px) {
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
