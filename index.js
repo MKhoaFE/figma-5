@@ -6,10 +6,10 @@ function closeNav() {
   document.getElementById("mySidenav").style.display = "none";
 }
 
-let wrap_1 = document.querySelector(".wrap-slide"),
-    itemWidth_1 = document.querySelectorAll(".item-slide")[0].clientWidth;
+let wrap_1 = document.querySelector(".wrap"),
+    itemWidth_1 = document.querySelectorAll(".item")[0].clientWidth;
 
-let items_1 = document.querySelectorAll(".item-slide");
+let items_1 = document.querySelectorAll(".item");
 
 let position_1 = 0;
 let currentDot_1 = 0;
