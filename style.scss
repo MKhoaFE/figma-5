@@ -28,6 +28,7 @@ body {
         background: none;
       }
       .dropdown-menu{
+        
         height: 55vh;
         width: 95vw;
         position: absolute;
@@ -44,6 +45,20 @@ body {
       }
       @media (max-width:768px) {
         display: block;
+      }
+    }
+    .dropdown:hover .dropdown-menu {
+
+      animation: fadeIn 0.5s ease forwards;
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     }
     .bi {
@@ -636,6 +651,7 @@ body {
       max-height: 32rem;
       transition: transform 0.5s;
       transform-origin: center center;
+      object-fit: cover;
     }
     img:hover {
       transform: scale(1.1);

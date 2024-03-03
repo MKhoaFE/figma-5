@@ -50,6 +50,19 @@ body {
     display: block;
   }
 }
+.header .container .dropdown:hover .dropdown-menu {
+  animation: fadeIn 0.5s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .header .container .bi {
   color: white;
   font-size: 35px;
@@ -682,6 +695,8 @@ body {
   max-height: 32rem;
   transition: transform 0.5s;
   transform-origin: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .quote .right img:hover {
   transform: scale(1.1);
