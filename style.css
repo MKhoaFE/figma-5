@@ -245,6 +245,7 @@ body {
 }
 .main-container .header .left p {
   font-weight: 300;
+  font-family: "Poppins";
   color: #9d9999;
 }
 .main-container .header .left button {
@@ -371,6 +372,7 @@ body {
 }
 .main-container .know-more .left p {
   color: #9d9999;
+  font-family: "Poppins";
 }
 .main-container .know-more .left .mid {
   gap: 1rem;
@@ -389,6 +391,7 @@ body {
 }
 .main-container .know-more .left .mid .item h3 {
   color: #b0eff1;
+  font-family: "Poppins";
 }
 .main-container .know-more .left .mid .item .bi {
   color: #ffc492;
@@ -492,6 +495,7 @@ body {
   }
 }
 .main-container .serving .title p {
+  font-family: "Poppins";
   width: 50%;
   color: #9d9999;
 }
@@ -542,6 +546,7 @@ body {
   font-size: 2rem;
 }
 .main-container .serving .service .card p {
+  font-family: "Poppins";
   font-weight: 300;
   color: #9d9999;
 }
@@ -617,6 +622,7 @@ body {
 }
 .main-container .our-menu .title .right p {
   color: #9d9999;
+  font-family: "Poppins";
 }
 .main-container .our-menu .menu .row {
   margin-top: 1rem;
@@ -640,6 +646,9 @@ body {
   font-size: 1.25rem;
   line-height: 1.5;
   font-weight: 500;
+}
+.main-container .our-menu .menu .row .title .price {
+  font-family: "Poppins";
 }
 .main-container .our-menu .btn {
   width: 100%;
@@ -816,6 +825,7 @@ body {
 .blog .wrap-slide .card .card-body .day {
   font-size: 1rem;
   color: #9d9999;
+  font-family: "Poppins";
 }
 .blog .wrap-slide .card .card-body .title {
   font-size: 2rem;
@@ -826,6 +836,7 @@ body {
   font-weight: 500;
 }
 .blog .wrap-slide .card .card-body .desc p {
+  font-family: "Poppins";
   color: #9d9999;
 }
 .blog .wrap-slide .card .image {
@@ -882,6 +893,7 @@ body {
   font-size: 1rem;
 }
 .map .left p {
+  font-family: "Poppins";
   color: #9d9999;
 }
 .map .right {
@@ -940,6 +952,7 @@ body {
 }
 
 .bottom {
+  font-family: "Poppins";
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;

@@ -14,6 +14,7 @@ body {
   @media (max-width: 768px) {
     position: relative;
   }
+
   .container {
     @media (max-width: 768px) {
       position: relative;
@@ -209,6 +210,7 @@ body {
     }
     .left {
       width: 50%;
+      
       @media (max-width: 768px) {
         width: 80%;
         margin: 0 10%;
@@ -238,6 +240,7 @@ body {
 
       p {
         font-weight: 300;
+        font-family: "Poppins";
         color: #9d9999;
       }
       button {
@@ -355,6 +358,7 @@ body {
       }
       p {
         color: #9d9999;
+        font-family: "Poppins";
       }
       .mid {
         gap: 1rem;
@@ -369,6 +373,7 @@ body {
           }
           h3 {
             color: #b0eff1;
+            font-family: "Poppins";
           }
           .bi {
             color: #ffc492;
@@ -464,6 +469,7 @@ body {
         }
       }
       p {
+        font-family: "Poppins";
         width: 50%;
         color: #9d9999;
         @media (max-width: 768px) {
@@ -508,6 +514,7 @@ body {
           font-size: 2rem;
         }
         p {
+          font-family: "Poppins";
           font-weight: 300;
           color: #9d9999;
         }
@@ -574,6 +581,7 @@ body {
         }
         p {
           color: #9d9999;
+          font-family: "Poppins";
         }
       }
     }
@@ -597,6 +605,9 @@ body {
           font-size: 1.25rem;
           line-height: 1.5;
           font-weight: 500;
+          .price{
+            font-family: "Poppins";
+          }
         }
       }
     }
@@ -759,6 +770,7 @@ body {
         .day {
           font-size: 1rem;
           color: #9d9999;
+          font-family: "Poppins";
         }
         .title {
           font-size: 2rem;
@@ -770,6 +782,7 @@ body {
         }
         .desc {
           p {
+            font-family: "Poppins";
             color: #9d9999;
           }
         }
@@ -822,6 +835,7 @@ body {
       font-size: 1rem;
     }
     p {
+      font-family: "Poppins";
       color: #9d9999;
     }
   }
@@ -875,6 +889,7 @@ body {
   margin-top: 1rem;
 }
 .bottom {
+  font-family: "Poppins";
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
@@ -916,6 +931,7 @@ body {
       align-items: center;
       width: 33%;
       justify-content: end;
+      
       @media (max-width: 768px) {
         width: 100%;
         justify-content: center;
