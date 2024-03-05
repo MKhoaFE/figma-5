@@ -556,6 +556,7 @@ body {
 .main-container .our-menu .top {
   display: flex;
   align-items: center;
+  padding-bottom: 2rem;
 }
 .main-container .our-menu .top span {
   color: #ffc492;
