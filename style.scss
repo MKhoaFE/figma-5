@@ -544,7 +544,7 @@ body {
     .title {
       display: flex;
       line-height: 1.6;
-      margin-bottom: 1rem;
+ padding-bottom: 3rem;
       @media (max-width: 768px) {
         display: block;
       }
@@ -557,6 +557,10 @@ body {
         h1 {
           font-weight: 600;
           font-size: 2rem;
+          width: 50%;
+          @media (max-width:768px) {
+            width: 100%;
+          }
         }
         span {
           color: #b0eff1;
