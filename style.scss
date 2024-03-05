@@ -345,6 +345,7 @@ body {
         .line {
           width: 3rem;
           height: 1px;
+          margin: 0;
           margin-left: 1rem;
           background-color: #fff;
         }
@@ -441,8 +442,10 @@ body {
       .line {
         width: 3rem;
         height: 1px;
-        margin-left: 1rem;
+
         background-color: #fff;
+        margin: 0;
+        margin-left: 1rem;
       }
     }
     .title {
@@ -521,15 +524,21 @@ body {
     .top {
       display: flex;
       align-items: center;
+
       padding-bottom: 2rem;
       span {
         color: #ffc492;
       }
       .line {
+        margin: 0;
         width: 3rem;
         height: 1px;
         margin-left: 1rem;
         background-color: #fff;
+        display: flex;
+        align-items: center;
+        display: flex;
+        text-align: center;
       }
     }
     .title {
