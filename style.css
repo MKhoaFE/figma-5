@@ -504,6 +504,10 @@ body {
     height: 40%;
   }
 }
+.main-container .serving .service .card .circle {
+  display: flex;
+  align-items: center;
+}
 .main-container .serving .service .card .circle .bi {
   font-size: 25px;
   color: #ffc492;
@@ -842,6 +846,7 @@ body {
   font-weight: 700;
   color: #ffc492;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 .footer .menu {
   font-family: Arial, sans-serif;
@@ -866,37 +871,69 @@ body {
 .footer .menu p:hover {
   color: #ffc492;
 }
-.footer .line {
-  border-top: solid 2px #9d9999;
+
+.line {
+  border-top: solid 1px #9d9999;
   height: 2px;
   width: 100%;
   margin-top: 1rem;
 }
-.footer .bottom {
+
+.bottom {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
 @media (max-width: 768px) {
-  .footer .bottom {
+  .bottom {
     display: block;
     width: 100%;
     text-align: center;
   }
 }
-.footer .bottom span {
-  color: #9d9999;
+.bottom .title {
+  width: 33%;
 }
-.footer .bottom .icon {
-  display: flex;
-  gap: 1rem;
-  font-size: 1.5rem;
+@media (max-width: 768px) {
+  .bottom .title {
+    width: 100%;
+  }
+}
+.bottom span {
   color: #9d9999;
 }
 @media (max-width: 768px) {
-  .footer .bottom .icon {
+  .bottom span {
+    width: 100%;
+  }
+}
+.bottom .icon {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  width: 33%;
+  text-align: center;
+  color: #9d9999;
+}
+@media (max-width: 768px) {
+  .bottom .icon {
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    width: 100%;
+  }
+}
+.bottom .icon .bottom-of-bottom {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: 33%;
+  justify-content: end;
+}
+@media (max-width: 768px) {
+  .bottom .icon .bottom-of-bottom {
+    width: 100%;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
