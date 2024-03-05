@@ -396,6 +396,9 @@ body {
   margin-top: 1rem;
   color: #9d9999;
 }
+.main-container .know-more .left .btn {
+  padding: 0;
+}
 @media (max-width: 768px) {
   .main-container .know-more .left .btn {
     display: flex;

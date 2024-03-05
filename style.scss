@@ -378,6 +378,7 @@ body {
         }
       }
       .btn {
+        padding: 0;
         @media (max-width: 768px) {
           display: flex;
           justify-content: center;
@@ -589,6 +590,7 @@ body {
       }
     }
     .btn {
+
       @media (max-width: 768px) {
         display: flex;
         justify-content: center;
