@@ -677,56 +677,60 @@ body {
 .quote {
   margin-top: 6rem;
   color: white;
-  display: flex;
   background: #1f1d21;
   width: 100%;
 }
+.quote .container {
+  display: flex;
+}
 @media (max-width: 768px) {
-  .quote {
+  .quote .container {
     display: block;
   }
 }
-.quote .left {
+.quote .container .left {
   width: 40%;
-  padding: 2rem 2.5rem;
+  padding: 2rem 0;
+  padding-right: 2.5rem;
 }
 @media (max-width: 768px) {
-  .quote .left {
+  .quote .container .left {
     width: 100%;
+    padding-right: 0;
   }
 }
-.quote .left h1 {
+.quote .container .left h1 {
   font-weight: 700;
   font-size: 5rem;
 }
-.quote .left span {
+.quote .container .left span {
   color: #9d9999;
   font-size: 1.5rem;
   font-weight: 500;
 }
-.quote .left .author {
+.quote .container .left .author {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
-.quote .left .author .avatar {
+.quote .container .left .author .avatar {
   overflow: hidden;
   width: 3rem;
   height: 3rem;
   border-radius: 1.5rem;
 }
-.quote .left .author .avatar img {
+.quote .container .left .author .avatar img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.quote .left .author p {
+.quote .container .left .author p {
   color: #9d9999;
   font-weight: 400;
 }
-.quote .left .line {
+.quote .container .left .line {
   border-top: solid 1px hsla(0, 0%, 100%, 0.24);
   height: 2px;
   width: 100%;
@@ -736,12 +740,12 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-.quote .left .line .avatar-line {
+.quote .container .left .line .avatar-line {
   width: 3rem;
   height: 0.125rem;
   background-color: #fff;
 }
-.quote .right {
+.quote .container .right {
   overflow: hidden;
   width: 60%;
   display: flex;
@@ -750,11 +754,11 @@ body {
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .quote .right {
+  .quote .container .right {
     width: 100%;
   }
 }
-.quote .right img {
+.quote .container .right img {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -764,11 +768,11 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.quote .right img:hover {
+.quote .container .right img:hover {
   transform: scale(1.1);
   overflow: hidden;
 }
-.quote .right .bi {
+.quote .container .right .bi {
   position: absolute;
   cursor: pointer;
   z-index: 2;

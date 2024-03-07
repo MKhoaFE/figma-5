@@ -1,0 +1,454 @@
+body {
+  overflow-x: hidden;
+  background-color: #19161b;
+  // font-family: Arial,sans-serif;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.header {
+  margin: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  @media (max-width: 768px) {
+    position: relative;
+  }
+
+  .container {
+    @media (max-width: 768px) {
+      position: relative;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .dropdown {
+      display: none;
+      position: relative;
+      button {
+        background: none;
+      }
+      .dropdown-menu {
+        height: auto;
+        width: 95vw;
+        position: absolute;
+        right: -2px;
+        z-index: 99999;
+        background-color: #19161b;
+
+        .dropdown-item {
+          z-index: 999999;
+          color: white;
+          font-weight: 600;
+          margin-top: 1rem;
+        }
+      }
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+    .dropdown:hover .dropdown-menu {
+      animation: fadeIn 0.5s ease forwards;
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+    .bi {
+      color: white;
+      font-size: 35px;
+    }
+  }
+  .navbar-brand {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #ffc492;
+  }
+  .navbar-brand:hover {
+    color: white;
+  }
+
+  .sidenav {
+    color: white;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100vw;
+      position: fixed;
+      transition: 0.5s;
+      transform: rotateX("angle");
+      z-index: 99;
+      top: 0;
+      left: 0;
+      background-color: #f8f8f8;
+      overflow-x: hidden;
+      padding-top: 60px;
+      .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      .head {
+        justify-content: space-between;
+        padding: 8px 8px 8px 32px;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid black;
+        .wrap {
+          button {
+            font-size: 18px;
+            border: none;
+            background: none;
+          }
+        }
+      }
+      i {
+        font-size: 39px;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        padding: 8px 8px 8px 32px;
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        gap: 1rem;
+      }
+      .active {
+        color: #ff7757;
+      }
+      a {
+        font-weight: 500;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        display: block;
+      }
+      a:hover {
+        color: #9d9999;
+      }
+    }
+  }
+  .navbar-nav {
+    .true {
+      background: #ff7757;
+    }
+    .nav-item {
+      height: 100%;
+      padding: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+      .nav-link {
+        color: white;
+      }
+    }
+  }
+
+  .clone-btn {
+    padding: 10px;
+    background: none;
+    border-color: #a0a4bd;
+    font-weight: 500;
+    color: #ffc492;
+    border: none;
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+    .bi {
+      font-size: 15px;
+      color: white;
+    }
+  }
+  #mySidenav {
+    display: none;
+  }
+}
+.our-menu {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  color: white;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 2rem;
+    span {
+      color: #ffc492;
+    }
+    .line {
+      margin: 0;
+      width: 3rem;
+      height: 1px;
+      margin-left: 1rem;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      display: flex;
+      text-align: center;
+    }
+  }
+  .title {
+    display: flex;
+    line-height: 1.6;
+    padding-bottom: 3rem;
+    @media (max-width: 768px) {
+      display: block;
+      padding-bottom: 1rem;
+    }
+    .left {
+      width: 50%;
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 1rem;
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 2rem;
+        width: 50%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      span {
+        color: #b0eff1;
+      }
+    }
+    .right {
+      width: 50%;
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 1rem;
+      }
+      p {
+        color: #9d9999;
+        font-family: "Poppins";
+      }
+    }
+  }
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    @media (max-width:768px) {
+        margin-bottom: 2rem;
+    }
+    .item{
+        padding: 0.5rem 1rem;
+    }
+    button{
+        border: none;
+        background: none;
+        text-decoration: none;
+        color: #9d9999;
+    }
+    button:hover{
+        color: #ffc492;
+    }
+    .active{
+        color: #ffc492;
+    }
+  }
+  .menu {
+    .row {
+      margin-top: 1rem;
+      @media (max-width: 768px) {
+        margin-top: 0;
+      }
+      .col-sm{
+        @media (max-width:768px) {
+            margin-top: 1rem;
+        }
+      }
+      img {
+        width: 100%;
+        max-height: 16rem;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+      .title {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+        background: #34292d;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        font-weight: 500;
+        .price {
+          font-family: "Poppins";
+        }
+      }
+    }
+  }
+  .btn {
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    width: 100%;
+    button {
+      margin-top: 1rem;
+      border: none;
+      background-color: #ffc492;
+      padding: 10px 20px;
+      font-weight: 600;
+      color: black;
+    }
+    button:hover {
+      transition: 0.5s;
+      background: #27252d;
+      color: white;
+    }
+  }
+}
+.map {
+  margin-top: 5rem;
+  color: white;
+  display: flex;
+  width: 100%;
+  background: #1f1d21;
+  @media (max-width: 768px) {
+    display: block;
+  }
+  .left {
+    width: 40%;
+    padding: 4rem;
+    line-height: 1.5;
+    font-weight: 500;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 2rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-family: "Poppins";
+      color: #9d9999;
+    }
+  }
+  .right {
+    width: 100%;
+    @media (max-width: 768px) {
+      height: 300px;
+    }
+  }
+}
+.footer {
+  color: white;
+  margin-top: 5rem;
+  .top {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+    h2 {
+      font-weight: 700;
+      color: #ffc492;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+  }
+  .menu {
+    font-family: Arial, sans-serif;
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    @media (max-width: 768px) {
+      display: block;
+    }
+    p {
+      cursor: pointer;
+      color: #9d9999;
+      font-weight: 600;
+    }
+    p:hover {
+      color: #ffc492;
+    }
+  }
+}
+.line {
+  border-top: solid 1px #9d9999;
+  height: 2px;
+  width: 100%;
+  margin-top: 1rem;
+}
+.bottom {
+  font-family: "Poppins";
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  @media (max-width: 768px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .title {
+    width: 33%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  span {
+    color: #9d9999;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .icon {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    width: 33%;
+    text-align: center;
+    color: #9d9999;
+    @media (max-width: 768px) {
+      justify-content: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+    .bottom-of-bottom {
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      width: 33%;
+      justify-content: end;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}

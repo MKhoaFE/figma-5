@@ -53,3 +53,93 @@ function myMap() {
   };
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
   }
+
+
+// filter menu
+var allElements = document.getElementsByClassName('all');
+var fastfoodElements = document.getElementsByClassName('fastfood');
+var coffeeElements = document.getElementsByClassName('coffee');
+var cocktailElements = document.getElementsByClassName('cocktail');
+var snackElements = document.getElementsByClassName('snack');
+var cakeElements = document.getElementsByClassName('cake');
+function filterAll() {
+  for (var i = 0; i < allElements.length; i++) {
+    fastfoodElements.style.display = "flex";
+    coffeeElements.style.display="flex";
+    cakeElements.style.display="flex";
+    cocktailElements.style.display="flex";
+    snackElements.style.display="flex";
+  } 
+}
+function filterFastfood() {
+  var fastfoodElements = document.getElementsByClassName('fastfood');
+  for (var i = 0; i < fastfoodElements.length; i++) {
+    if (fastfoodElements[i].style.display === "none") {
+      fastfoodElements[i].style.display = "block";
+      coffeeElements[i].style.display="none";
+      cakeElements[i].style.display="none";
+      cocktailElements[i].style.display="none";
+      snackElements[i].style.display="none";
+      
+    } else {
+      fastfoodElements[i].style.display = "none";
+    }
+  }
+}
+
+function filterCoffee(){
+  var coffeeElements = document.getElementsByClassName('coffee');
+  for(var i = 0;i<coffeeElements.length;i++){
+    if(coffeeElements[i].style.display === "none"){
+      coffeeElements[i].style.display="block";
+      fastfoodElements[i].style.display="none";
+      cakeElements[i].style.display="none";
+      cocktailElements[i].style.display="none";
+      snackElements[i].style.display="none";
+    }else{
+      coffeeElements[i].style.display="none";
+    }
+  }
+}
+function filterCake(){
+  var cakeElements = document.getElementsByClassName('cake');
+  for(var i = 0;i<cakeElements.length;i++){
+    if(cakeElements[i].style.display === "none"){
+      cakeElements[i].style.display="block";
+      coffeeElements[i].style.display="none";
+      fastfoodElements[i].style.display="none";
+      cocktailElements[i].style.display="none";
+      snackElements[i].style.display="none";
+    }else{
+      cakeElements[i].style.display="none";
+    }
+  }
+}
+function filterCocktail(){
+  var cocktailElements = document.getElementsByClassName('cocktail');
+  for(var i = 0;i<cocktailElements.length;i++){
+    if(cocktailElements[i].style.display === "none"){
+      cocktailElements[i].style.display="block";
+      coffeeElements[i].style.display="none";
+      fastfoodElements[i].style.display="none";
+      caketailElements[i].style.display="none";
+      snackElements[i].style.display="none";
+    }else{
+      cocktailElements[i].style.display="none";
+    }
+  }
+}
+function filterSnack(){
+  var snackElements = document.getElementsByClassName('snack');
+  for(var i = 0;i<snacklElements.length;i++){
+    if(snacklElements[i].style.display === "none"){
+      snacklElements[i].style.display="block";
+      coffeeElements[i].style.display="none";
+      fastfoodElements[i].style.display="none";
+      caketailElements[i].style.display="none";
+      cocktailElements[i].style.display="none";
+    }else{
+      snacklElements[i].style.display="none";
+    }
+  }
+}
