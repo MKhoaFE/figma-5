@@ -250,14 +250,18 @@ body {
       }
     }
   }
-  .list{
+  .show {
+    display: block;
+  }
+
+  #list{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 4rem;
     @media (max-width:768px) {
         margin-bottom: 2rem;
     }
-    .item{
+    .list-item{
         padding: 0.5rem 1rem;
     }
     button{
@@ -275,6 +279,7 @@ body {
   }
   .menu {
     .row {
+      display: flex;
       margin-top: 1rem;
       @media (max-width: 768px) {
         margin-top: 0;
@@ -451,4 +456,11 @@ body {
       }
     }
   }
+}
+.filterDiv{
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  display: none;
+
 }

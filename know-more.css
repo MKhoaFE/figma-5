@@ -181,163 +181,124 @@ body {
   display: none;
 }
 
-.our-menu {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.know-more {
+  position: relative;
   color: white;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  display: flex;
+  height: auto;
 }
 @media (max-width: 768px) {
-  .our-menu {
+  .know-more {
+    width: 100%;
+    display: block;
+  }
+}
+.know-more .left {
+  width: 50%;
+  line-height: 1.5rem;
+}
+@media (max-width: 768px) {
+  .know-more .left {
     width: 100%;
   }
 }
-.our-menu .top {
+.know-more .left .top {
   display: flex;
   align-items: center;
-  padding-bottom: 2rem;
 }
-.our-menu .top span {
+.know-more .left .top span {
   color: #ffc492;
 }
-.our-menu .top .line {
-  margin: 0;
+.know-more .left .top .line {
   width: 3rem;
   height: 1px;
+  margin: 0;
   margin-left: 1rem;
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  display: flex;
-  text-align: center;
 }
-.our-menu .title {
+.know-more .left h1 {
+  margin-top: 2rem;
+}
+.know-more .left p {
+  color: #9d9999;
+  font-family: "Poppins";
+}
+.know-more .left .mid {
+  gap: 1rem;
   display: flex;
-  line-height: 1.6;
-  padding-bottom: 3rem;
+  margin-top: 1.5rem;
 }
 @media (max-width: 768px) {
-  .our-menu .title {
+  .know-more .left .mid {
     display: block;
-    padding-bottom: 1rem;
   }
-}
-.our-menu .title .left {
-  width: 50%;
 }
 @media (max-width: 768px) {
-  .our-menu .title .left {
-    width: 100%;
-    margin-top: 1rem;
+  .know-more .left .mid .item {
+    margin-top: 2rem;
   }
 }
-.our-menu .title .left h1 {
-  font-weight: 600;
-  font-size: 2rem;
-  width: 50%;
-}
-@media (max-width: 768px) {
-  .our-menu .title .left h1 {
-    width: 100%;
-  }
-}
-.our-menu .title .left span {
+.know-more .left .mid .item h3 {
   color: #b0eff1;
-}
-.our-menu .title .right {
-  width: 50%;
-}
-@media (max-width: 768px) {
-  .our-menu .title .right {
-    width: 100%;
-    margin-top: 1rem;
-  }
-}
-.our-menu .title .right p {
-  color: #9d9999;
   font-family: "Poppins";
 }
-.our-menu .show {
-  display: block;
-}
-.our-menu #list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 4rem;
-}
-@media (max-width: 768px) {
-  .our-menu #list {
-    margin-bottom: 2rem;
-  }
-}
-.our-menu #list .list-item {
-  padding: 0.5rem 1rem;
-}
-.our-menu #list button {
-  border: none;
-  background: none;
-  text-decoration: none;
-  color: #9d9999;
-}
-.our-menu #list button:hover {
+.know-more .left .mid .item .bi {
   color: #ffc492;
 }
-.our-menu #list .active {
-  color: #ffc492;
-}
-.our-menu .menu .row {
-  display: flex;
+.know-more .left .mid p {
   margin-top: 1rem;
+  color: #9d9999;
+}
+.know-more .left .btn {
+  padding: 0;
 }
 @media (max-width: 768px) {
-  .our-menu .menu .row {
-    margin-top: 0;
-  }
-}
-@media (max-width: 768px) {
-  .our-menu .menu .row .col-sm {
-    margin-top: 1rem;
-  }
-}
-.our-menu .menu .row img {
-  width: 100%;
-  max-height: 16rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.our-menu .menu .row .title {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
-  background: #34292d;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  font-weight: 500;
-}
-.our-menu .menu .row .title .price {
-  font-family: "Poppins";
-}
-.our-menu .btn {
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .our-menu .btn {
+  .know-more .left .btn {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-.our-menu .btn button {
-  margin-top: 1rem;
+.know-more .left .btn button {
+  margin-top: 2rem;
   border: none;
   background-color: #ffc492;
   padding: 10px 20px;
   font-weight: 600;
   color: black;
 }
-.our-menu .btn button:hover {
-  transition: 0.5s;
+.know-more .left .btn button:hover {
   background: #27252d;
   color: white;
+  transition: 0.5s;
+}
+.know-more .right {
+  position: relative;
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .know-more .right {
+    width: 80%;
+    margin: 0 10%;
+    justify-content: center;
+  }
+}
+.know-more .right img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 768px) {
+  .know-more .right img {
+    width: 50%;
+  }
+}
+.know-more .right .special {
+  margin-top: 5rem;
 }
 
 .map {
@@ -485,11 +446,4 @@ body {
     width: 100%;
     justify-content: center;
   }
-}
-
-.filterDiv {
-  float: left;
-  color: #ffffff;
-  text-align: center;
-  display: none;
-}/*# sourceMappingURL=menu.css.map */
+}/*# sourceMappingURL=know-more.css.map */

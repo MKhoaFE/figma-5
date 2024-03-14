@@ -59,7 +59,7 @@
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Home</a>
             <a class="dropdown-item" href="menu.html">Menu</a>
-            <a class="dropdown-item" href="#">Pricing</a>
+
             <a class="dropdown-item" href="#">About Us</a>
             <a class="dropdown-item" href="#">Our Story</a>
             <a class="dropdown-item" href="#">Blog</a>
@@ -75,9 +75,7 @@
             <li class="nav-item">
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing </a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
             </li>
@@ -118,18 +116,45 @@
         </div>
       </div>
       <div class="container">
-        <div class="list">
-          <button class="item active" onclick="filterAll()">All</button>
-          <button class="item" onclick="filterFastfood()" >Fast Food</button>
-          <button class="item" onclick="filterCoffee()">Coffee</button>
-          <button class="item" onclick="filterCocktail()">Cocktails</button>
-          <button class="item"onclick="filterCake()">Quafe Cake</button>
-          <button class="item"onclick="filterSnack()">Snacks</button>
+        <div id="list">
+          <button class="list-item active" onclick="filterSelection('all')">
+            All
+          </button>
+          <button class="list-item" onclick="filterSelection('fastfood')">
+            Fast Food
+          </button>
+          <button class="list-item" onclick="filterSelection('coffee')">
+            Coffee
+          </button>
+          <button class="list-item" onclick="filterSelection('cocktail')">
+            Cocktails
+          </button>
+          <button class="list-item" onclick="filterSelection('cake')">
+            Quafe Cake
+          </button>
+          <button class="list-item" onclick="filterSelection('snack')">
+            Snacks
+          </button>
         </div>
       </div>
+      <!-- <div class="container">
+        <div class="filterDiv fastfood">BMW</div>
+        <div class="filterDiv fastfood snack">Orange</div>
+        <div class="filterDiv cake">Volvo</div>
+        <div class="filterDiv fastfood">Red</div>
+        <div class="filterDiv cocktail">Ford</div>
+        <div class="filterDiv cocktail">Blue</div>
+        <div class="filterDiv coffee">Cat</div>
+        <div class="filterDiv fastfood">Dog</div>
+        <div class="filterDiv cake">Melon</div>
+        <div class="filterDiv cocktail cake">Kiwi</div>
+        <div class="filterDiv snack">Banana</div>
+        <div class="filterDiv snack">Lemon</div>
+        <div class="filterDiv cake">Cow</div>
+      </div> -->
       <div class="menu">
         <div class="row all">
-          <div class="col-sm coffee " >
+          <div class="col-4 coffee filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/614852cdf0a64ebd600dbcb1_Drp%20Coffee.jpg"
               alt=""
@@ -141,7 +166,7 @@
               <div class="price">$ 8.85</div>
             </div>
           </div>
-          <div class="col-sm cake ">
+          <div class="col-4 cake filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/613207b2f568ed88e55dd71d_Choco%20Cup%20Cake-p-800.jpeg"
               alt=""
@@ -153,7 +178,7 @@
               <div class="price">$ 4.85</div>
             </div>
           </div>
-          <div class="col-sm fastfood ">
+          <div class="col-4 fastfood filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/613207cda690ee3e96586d69_Chicken%20Burger-p-500.jpeg"
               alt=""
@@ -167,7 +192,7 @@
           </div>
         </div>
         <div class="row all">
-          <div class="col-sm snack ">
+          <div class="col-4 snack filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/614853716cd88ba6cccaec5a_French%20Fries.jpg"
               alt=""
@@ -179,7 +204,7 @@
               <div class="price">$ 7.85</div>
             </div>
           </div>
-          <div class="col-sm fastfood ">
+          <div class="col-4 fastfood filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/61320868d88ba2443c8656ec_Sandwich.jpg"
               alt=""
@@ -191,7 +216,7 @@
               <div class="price">$ 3.97</div>
             </div>
           </div>
-          <div class="col-sm fastfood ">
+          <div class="col-4 fastfood filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/6132088857e0dd758acd88e6_Chinese%20Soup.jpg"
               alt=""
@@ -205,7 +230,7 @@
           </div>
         </div>
         <div class="row all">
-          <div class="col-sm cake ">
+          <div class="col-4 cake filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/613208a4f568ed3ae55ddbac_Quafe%20Brade.jpg"
               alt=""
@@ -217,7 +242,7 @@
               <div class="price">$ 8.85</div>
             </div>
           </div>
-          <div class="col-sm coffee ">
+          <div class="col-4 coffee filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/613208bed39ff94235e3451e_Dalgona%20Coffee-p-800.jpeg"
               alt=""
@@ -229,7 +254,7 @@
               <div class="price">$ 4.85</div>
             </div>
           </div>
-          <div class="col-sm fastfood ">
+          <div class="col-4 fastfood filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/613208dc0d4b09303afb27a2_Chowmin%20Noodle-p-500.jpeg"
               alt=""
@@ -243,7 +268,7 @@
           </div>
         </div>
         <div class="row all">
-          <div class="col-sm cocktail ">
+          <div class="col-4 cocktail filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/613208fbad81a85ca0ade9e2_Coka%20Cola.jpg"
               alt=""
@@ -255,7 +280,7 @@
               <div class="price">$ 7.85</div>
             </div>
           </div>
-          <div class="col-sm fastfood ">
+          <div class="col-4 fastfood filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/6132091ab59938cbf543a428_Fruit%20Salad-p-800.jpeg"
               alt=""
@@ -267,7 +292,7 @@
               <div class="price">$ 3.97</div>
             </div>
           </div>
-          <div class="col-sm cocktail ">
+          <div class="col-4 cocktail filterDiv">
             <img
               src="https://assets.website-files.com/613206902d91d80042c2fb56/613209330002244e49a6ae4b_Cocktail.jpg"
               alt=""
