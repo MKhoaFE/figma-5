@@ -198,7 +198,7 @@ body {
       display: block;
     }
     .left {
-      width: 50%;
+      width: 100%;
       line-height: 1.5rem;
       @media (max-width: 768px) {
         width: 100%;
@@ -219,10 +219,12 @@ body {
       }
       h1 {
         margin-top: 2rem;
+        padding-bottom: 2rem;
       }
       p {
         color: #9d9999;
         font-family: "Poppins";
+        padding-bottom: 2rem;
       }
       .mid {
         gap: 1rem;
@@ -273,7 +275,7 @@ body {
     .right {
       position: relative;
       display: flex;
-      width: 50%;
+      width: 100%;
       justify-content: end;
       gap: 2rem;
 
@@ -291,6 +293,124 @@ body {
 
       .special {
         margin-top: 5rem;
+      }
+    }
+  }
+  .mid-container{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    .best-coffee{
+      .image{
+        position: relative;
+        img{
+          object-fit: auto,cover;
+          width: 100%;
+          @media (max-width:768px) {
+            height: 28rem;
+            object-fit: cover;
+            object-position: 0px 0px, 50% 50%;
+          }
+        }
+        .text{
+          color: white;
+          position: absolute;
+          z-index: 2;
+          padding: 6rem 2rem;
+          max-width: 32rem;
+          span{
+            color: #ffc492;
+          }
+          p{
+            color: #9d9999;
+            font-family: "Poppins";
+          }
+        }
+        .overlay{
+          position: absolute;
+          z-index: 1;
+        }
+      }
+
+
+    }
+    .history{
+      background-color: #1f1d21;
+      color: white;
+      padding: 6rem 2rem;
+      .top{
+
+      }
+      .menu-history{
+
+
+        display: flex;
+        @media (max-width:768px) {
+          display: block;
+        }
+        .item-menu{
+          display: block;
+          position: relative;
+          @media (max-width:768px) {
+            display: flex;
+          }
+          .line{
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 1px;
+            border-style: dashed;
+            border-width: 1px;
+            border-color: hsla(0, 0%, 100%, 0.15);
+            @media (max-width:768px) {
+              justify-content: center;
+              width: 1px;
+              height: 100%;
+              position: absolute;
+            }
+            .line-dot{
+              position: absolute;
+              left: 0rem;
+              top: auto;
+              right: auto;
+              bottom: auto;
+              width: 20%;
+              height: 4px;
+              background-color: #ffc492;
+              @media (max-width:768px) {
+                left: auto;
+                top: 0%;
+                right: auto;
+                bottom: auto;
+                width: 0.25rem;
+                height: 20%;
+              }
+            }
+          }
+          .text{
+            padding-right: 2rem;
+            @media (max-width:768px) {
+              padding-right: 0rem;
+              padding-left: 2rem;
+            }
+            h3{
+              padding-top: 2rem;
+              font-family: "Poppins";
+            }
+            span{
+              padding-top: 1.5rem;
+              font-size: 1.25rem;
+              line-height: 1.5;
+              font-weight: 500;
+            }
+            p{
+              padding-top: 1.5rem;
+              color: #9d9999;
+              font-family: "Poppins";
+            }
+
+          }
+        }
       }
     }
   }
