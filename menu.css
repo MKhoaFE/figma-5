@@ -183,7 +183,7 @@ body {
 
 .our-menu {
   padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
   color: white;
 }
 @media (max-width: 768px) {
@@ -289,9 +289,20 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .our-menu .menu {
+    display: block;
+    flex-wrap: nowrap;
+  }
+}
 .our-menu .menu .item-menu {
   width: 32%;
   margin-top: 1rem;
+}
+@media (max-width: 768px) {
+  .our-menu .menu .item-menu {
+    width: 100%;
+  }
 }
 .our-menu .menu .item-menu img {
   width: 100%;
@@ -307,6 +318,11 @@ body {
   font-size: 1.25rem;
   line-height: 1.5;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .our-menu .menu .item-menu .title {
+    display: block;
+  }
 }
 .our-menu .menu .item-menu .title .price {
   font-family: "Poppins";
@@ -368,7 +384,7 @@ body {
 }
 
 .map {
-  margin-top: 5rem;
+  margin-top: 2rem;
   color: white;
   display: flex;
   width: 100%;
