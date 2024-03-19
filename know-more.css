@@ -320,8 +320,8 @@ body {
     height: 28rem;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 0px 0px, 50% 50%;
-       object-position: 0px 0px, 50% 50%;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
   }
 }
 .mid-container .best-coffee .image .text {
@@ -423,6 +423,49 @@ body {
 }
 .mid-container .history .menu-history .item-menu .text p {
   padding-top: 1.5rem;
+  color: #9d9999;
+  font-family: "Poppins";
+}
+
+.footer-container {
+  display: flex;
+  color: white;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    display: block;
+  }
+}
+.footer-container .left {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .footer-container .left {
+    width: 100%;
+  }
+}
+.footer-container .left h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .footer-container .left h1 {
+    font-size: 2rem;
+  }
+}
+.footer-container .right {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .footer-container .right {
+    width: 100%;
+    padding-top: 2rem;
+  }
+}
+.footer-container .right p {
+  padding-top: 2rem;
   color: #9d9999;
   font-family: "Poppins";
 }
