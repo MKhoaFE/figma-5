@@ -1,16 +1,13 @@
-
-
 function myMap() {
-  var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
+  var mapProp = {
+    center: new google.maps.LatLng(51.508742, -0.12085),
+    zoom: 5,
   };
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  }
-
+  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
 
 // filter menu
-filterSelection("all")
+filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -26,7 +23,9 @@ function w3AddClass(element, name) {
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
   }
 }
 
@@ -36,7 +35,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
@@ -45,9 +44,11 @@ function w3RemoveClass(element, name) {
 var btnContainer = document.getElementById("list");
 var btns = btnContainer.getElementsByClassName("list-item");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
+  btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
 }
+
+
