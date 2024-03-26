@@ -782,7 +782,7 @@ body {
      object-fit: cover;
 }
 .quote .container .right .bg {
-  z-index: -2;
+  z-index: 1;
 }
 .quote .container .right img:hover {
   transform: scale(1.1);
