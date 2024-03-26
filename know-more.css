@@ -342,6 +342,7 @@ body {
 .mid-container .best-coffee .image .overlay {
   position: absolute;
   z-index: 1;
+  opacity: 0.5;
 }
 .mid-container .history {
   background-color: #1f1d21;
