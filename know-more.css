@@ -345,6 +345,11 @@ body {
   color: #9d9999;
   font-family: "Poppins";
 }
+@media (max-width: 768px) {
+  .mid-container .best-coffee .image .text p {
+    color: white;
+  }
+}
 .mid-container .best-coffee .image .overlay {
   position: absolute;
   z-index: 1;

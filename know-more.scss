@@ -340,6 +340,9 @@ body {
         p {
           color: #9d9999;
           font-family: "Poppins";
+          @media (max-width:768px) {
+            color: white;
+          }
         }
       }
       .overlay {
