@@ -312,9 +312,15 @@ body {
   position: relative;
 }
 .mid-container .best-coffee .image img {
-  -o-object-fit: auto, cover;
-     object-fit: auto, cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 28rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 @media (max-width: 768px) {
   .mid-container .best-coffee .image img {
